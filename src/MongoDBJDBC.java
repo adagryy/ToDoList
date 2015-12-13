@@ -27,7 +27,7 @@ public class MongoDBJDBC {
 
             // Now connect to your databases
             DB db = mongoClient.getDB( "test" );
-//            System.out.println("Connect to database successfully");
+            System.out.println("Connect to database successfully");
 //            boolean auth = db.authenticate(myUserName, myPassword);
 //            System.out.println("Authentication: "+auth);
 
