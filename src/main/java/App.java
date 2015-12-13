@@ -35,6 +35,19 @@ public class App {
             System.out.println(cursor.next());
         }
     }
+
+    private static void update(DBCollection table, String oldName, String newName) {
+        BasicDBObject query = new BasicDBObject();
+        query.put("name", oldName);
+
+        BasicDBObject newDocument = new BasicDBObject();
+        newDocument.put("name", newName);
+
+        BasicDBObject updateObj = new BasicDBObject();
+        updateObj.put("$set", newDocument);
+
+        table.update(query, updateObj);
+    }
     public static void main(String[] args) {
         try {
             MongoClient mongo = new MongoClient("localhost", 27017);
@@ -56,19 +69,10 @@ public class App {
 
             /**** Update ****/
             // search document where name="mkyong" and update it with new values
-            BasicDBObject query = new BasicDBObject();
-            query.put("name", "Robcio");
-
-            BasicDBObject newDocument = new BasicDBObject();
-            newDocument.put("name", "Mati-updated");
-
-            BasicDBObject updateObj = new BasicDBObject();
-            updateObj.put("$set", newDocument);
-
-            table.update(query, updateObj);
+            update(table, "Rychu", "Zbychu");
 
             /**** Find and display ****/
-            findAndDisplay(table,"Rychu");
+            findAndDisplay(table, "Zbychu ");
             /**** Done ****/
             System.out.println("Done");
 
