@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/todolist_with_tdd.iml" filepath="$PROJECT_DIR$/todolist_with_tdd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mongodb.iml" filepath="$PROJECT_DIR$/mongodb.iml" />
     </modules>
   </component>
 </project>
