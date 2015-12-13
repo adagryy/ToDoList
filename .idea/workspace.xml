@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3358fd1-24a0-4ebe-bd53-759313dbcfc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/App.java" afterPath="$PROJECT_DIR$/src/main/java/App.java" />
     </list>
     <ignored path="untitled7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -690,7 +687,7 @@
       <workItem from="1449968643899" duration="451000" />
       <workItem from="1449969139893" duration="853000" />
       <workItem from="1449970050731" duration="305000" />
-      <workItem from="1449970408314" duration="4383000" />
+      <workItem from="1449970408314" duration="4403000" />
     </task>
     <task id="LOCAL-00001" summary="first&#10;">
       <created>1449968801980</created>
@@ -728,11 +725,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449970635702</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first commit-my version&#10;&#10;">
+      <created>1450011927716</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450011927716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5992000" />
+    <option name="totallyTimeSpent" value="6012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
