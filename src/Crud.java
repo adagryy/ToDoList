@@ -6,11 +6,12 @@ import com.mongodb.*;
 public class Crud {
 
     private DBCollection connectToDb() {
+
         // To connect to mongodb server
-        MongoClient mongoClient = new MongoClient( "localhost" , 27017 );
+        MongoClient mongoClient = new MongoClient("localhost", 27017);
 
         // Now connect to your databases
-        DB db = mongoClient.getDB( "test" );
+        DB db = mongoClient.getDB("test");
         System.out.println("Connect to database successfully");
 
 //            boolean auth = db.authenticate(myUserName, myPassword);
