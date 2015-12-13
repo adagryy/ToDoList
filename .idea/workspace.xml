@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3358fd1-24a0-4ebe-bd53-759313dbcfc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/App.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_10_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/org_mongodb_mongodb_driver_3_2_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/mongoSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bson-3.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/bson-3.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mongodb-driver-3.0.0-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mongodb-driver-3.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mongodb-driver-3.2.0-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mongodb-driver-3.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mongodb-driver-core-3.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/mongodb-driver-core-3.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/todolist_with_tdd/MongoDBJDBC.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/MongoDBJDBC.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/todolist_with_tdd.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="untitled7.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,7 +26,7 @@
     <favorites_list name="untitled7" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,8 +86,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,7 +167,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -659,7 +637,8 @@
       <updated>1449968642709</updated>
       <workItem from="1449968643899" duration="451000" />
       <workItem from="1449969139893" duration="853000" />
-      <workItem from="1449970050731" duration="105000" />
+      <workItem from="1449970050731" duration="305000" />
+      <workItem from="1449970408314" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="first&#10;">
       <created>1449968801980</created>
@@ -673,11 +652,17 @@
       <option name="project" value="LOCAL" />
       <updated>1449969289096</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first&#10;">
+      <created>1449970173197</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1449970173197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1409000" />
+    <option name="totallyTimeSpent" value="1714000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
