@@ -15,13 +15,28 @@ import com.mongodb.MongoException;
 /**
  * Java + MongoDB Hello world Example
  */
+
 public class App {
+
+    private static void addObj(DBCollection table, String   valueName, int valueAge){
+        BasicDBObject document = new BasicDBObject();
+        document.put("name", valueName);
+        document.put("age", valueAge);
+        document.put("createdDate", new Date());
+        table.insert(document);
+    }
+    private static void findAndDisplay(DBCollection table,String valueName){
+        BasicDBObject searchQuery = new BasicDBObject();
+        searchQuery.put("name", valueName);
+
+        DBCursor cursor = table.find(searchQuery);
+
+        while (cursor.hasNext()) {
+            System.out.println(cursor.next());
+        }
+    }
     public static void main(String[] args) {
-
         try {
-
-            /**** Connect to MongoDB ****/
-            // Since 2.10.0, uses MongoClient
             MongoClient mongo = new MongoClient("localhost", 27017);
 
             /**** Get database ****/
@@ -33,32 +48,16 @@ public class App {
             DBCollection table = db.getCollection("user");
 
             /**** Insert ****/
-            // create a document to store key and value
-            BasicDBObject document = new BasicDBObject();
-            document.put("name", "Mati");
-            document.put("age", 21);
-            document.put("createdDate", new Date());
-            table.insert(document);
-
-            BasicDBObject document2 = new BasicDBObject();
-            document2.put("name", "Robcio");
-            document2.put("age", 22);
-            document2.put("createdDate", new Date());
-            table.insert(document);
+           // addObj(table,"Rychu",34);
+            //addObj(table,"Marika",54);
+           // addObj(table,"Marian",64);
             /**** Find and display ****/
-            BasicDBObject searchQuery = new BasicDBObject();
-            searchQuery.put("name", "Mati");
 
-            DBCursor cursor = table.find(searchQuery);
-
-            while (cursor.hasNext()) {
-                System.out.println(cursor.next());
-            }
 
             /**** Update ****/
             // search document where name="mkyong" and update it with new values
             BasicDBObject query = new BasicDBObject();
-            query.put("name", "Mati");
+            query.put("name", "Robcio");
 
             BasicDBObject newDocument = new BasicDBObject();
             newDocument.put("name", "Mati-updated");
@@ -69,15 +68,7 @@ public class App {
             table.update(query, updateObj);
 
             /**** Find and display ****/
-            BasicDBObject searchQuery2
-                    = new BasicDBObject().append("name", "Mati-updated");
-
-            DBCursor cursor2 = table.find(searchQuery2);
-
-            while (cursor2.hasNext()) {
-                System.out.println(cursor2.next());
-            }
-
+            findAndDisplay(table,"Rychu");
             /**** Done ****/
             System.out.println("Done");
 

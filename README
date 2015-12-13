@@ -1,0 +1,3 @@
+Jak by co mongo zrobione. Najprostrze operacje. Odpalamy klasę App. maven robi za nas wszystko i nie musimy (najprawdopodobniej ) nic instalować.
+Baza danych po podłączeniu tworzy się sama(nazwa bazy testdb, a  tabela user ). Pierwsze puty skomentowałem, aby nie robić w kółko tych samych obiektów.
+Mongo pozwala na to
