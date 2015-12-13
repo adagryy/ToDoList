@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/MongoDBJDBC.java" line="25" />
+    <bookmark url="file://$PROJECT_DIR$/src/MongoDBJDBC.java" line="29" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5cba7e8-3a11-43f1-9a94-827bfd021b6c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/todolist_with_tdd/Crud.class" afterPath="$PROJECT_DIR$/out/production/todolist_with_tdd/Crud.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/todolist_with_tdd/MongoDBJDBC.class" afterPath="$PROJECT_DIR$/out/production/todolist_with_tdd/MongoDBJDBC.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Crud.java" afterPath="$PROJECT_DIR$/src/Crud.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MongoDBJDBC.java" afterPath="$PROJECT_DIR$/src/MongoDBJDBC.java" />
     </list>
@@ -39,10 +41,10 @@
       <file leaf-file-name="MongoDBJDBC.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MongoDBJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6581876">
-              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.74403816">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding>
-                <element signature="e#0#608#0" expanded="true" />
+                <element signature="e#0#722#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/src/Crud.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="73" selection-start-line="34" selection-start-column="23" selection-end-line="36" selection-end-column="73" />
+              <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -207,6 +209,7 @@
     <property name="Repository.Attach.Sources" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="OPEN_URL_DIALOG">
@@ -430,6 +433,38 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -479,6 +514,22 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.MongoDBJDBC" />
     </list>
@@ -511,12 +562,12 @@
       <workItem from="1450003787303" duration="300000" />
       <workItem from="1450004416832" duration="1747000" />
       <workItem from="1450015328911" duration="200000" />
-      <workItem from="1450022212033" duration="1289000" />
+      <workItem from="1450022212033" duration="2080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14773000" />
+    <option name="totallyTimeSpent" value="15564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="45" y="52" width="938" height="1028" extended-state="4" />
@@ -576,7 +627,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -610,7 +661,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -636,7 +687,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -662,7 +713,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -680,7 +731,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -698,7 +749,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -716,7 +767,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -753,17 +804,17 @@
     <entry file="file://$PROJECT_DIR$/src/Crud.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="73" selection-start-line="34" selection-start-column="23" selection-end-line="36" selection-end-column="73" />
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MongoDBJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6581876">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.74403816">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#0#608#0" expanded="true" />
+            <element signature="e#0#722#0" expanded="true" />
           </folding>
         </state>
       </provider>

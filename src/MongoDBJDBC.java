@@ -22,5 +22,9 @@ public class MongoDBJDBC {
         Crud crud = new Crud();
         crud.insertDocument("Napisanie projektu na testowanie", "15.12.2015", "17.12.2015");
         crud.read();
+        crud.deleteDocument();
+        crud.deleteDocument();
+        crud.deleteDocument();
+        crud.read();
     }
 }
