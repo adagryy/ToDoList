@@ -2,6 +2,11 @@ package program;
 
 import com.mongodb.*;
 
+import static com.mongodb.client.model.Filters.*;
+import static com.mongodb.client.model.Sorts.ascending;
+import static java.util.Arrays.asList;
+
+
 /**
  * Created by Adam on 13.12.2015.
  */
@@ -21,11 +26,12 @@ public class Crud {
         return coll;
     }
 
-    public void insertDocument(String desc,  String start, String end ){
+    public DBObject insertDocument(String desc,  String start, String end ){
+        BasicDBObject doc = null;
         try{
             DBCollection coll = connectToDb();
 
-            BasicDBObject doc = new BasicDBObject("title", "MongoDB").
+            doc = new BasicDBObject("title", "MongoDB").
                     append("Opis", desc).
                     append("Początek", start).
                     append("KOniec", end).
@@ -36,6 +42,7 @@ public class Crud {
         }catch(Exception e){
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
+        return doc;
     }
 
     public String read(){
@@ -55,18 +62,20 @@ public class Crud {
         return text;
     }
 
-    public void deleteDocument(){
+    public DBObject deleteDocument(){
+        DBObject myDoc = null;
         try{
             // To connect to mongodb server
             DBCollection coll = connectToDb();
 
-            DBObject myDoc = coll.findOne();
+            myDoc = coll.findOne();
             coll.remove(myDoc);
+            System.out.println(myDoc.get("Opis"));
             DBCursor cursor = coll.find();
             int i = 1;
 
             while (cursor.hasNext()) {
-                System.out.println("Inserted Document: "+i);
+//                System.out.println("Inserted Document: "+i);
                 System.out.println(cursor.next());
                 i++;
             }
@@ -76,6 +85,25 @@ public class Crud {
         }catch(Exception e){
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
+
+        return myDoc;
+    }
+
+    public BasicDBObject updateDocument( String oldName, String newName) {
+        DBCollection coll = connectToDb();
+
+        BasicDBObject query = new BasicDBObject();
+        query.put("Opis", oldName);
+
+        BasicDBObject newDocument = new BasicDBObject();
+        newDocument.put("Opis", newName);
+
+        BasicDBObject updateObj = new BasicDBObject();
+        updateObj.put("$set", newDocument);
+
+        coll.update(query, updateObj);
+
+        return updateObj;
     }
 
 }
