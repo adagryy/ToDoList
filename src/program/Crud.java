@@ -62,6 +62,11 @@ public class Crud {
         return text;
     }
 
+    public void readAllTask{
+//        TODO
+//        powinnismy wylistowac wszystkie taski
+    }
+
     public DBObject deleteTask(){
         DBObject task = null;
         try{

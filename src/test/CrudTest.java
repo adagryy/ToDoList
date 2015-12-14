@@ -16,15 +16,15 @@ public class CrudTest {
 
     @Test
     public void shouldNotAddNewTask() throws Exception {
-        DBObject dbo =  crud.createTask( null, null , null);
-        assertNull(dbo);
+        DBObject task =  crud.createTask( null, null , null);
+        assertNull(task);
     }
 
     @Test
     public void shouldAddNewTask() throws Exception {
         String desc = "Przykładowy opis", start = "21.12.2015", end = "25.12.2015";
-        DBObject dbo =  crud.createTask(desc, start, end);
-        assertNotNull(dbo);
+        DBObject task =  crud.createTask(desc, start, end);
+        assertNotNull(task);
     }
 
     @Test
@@ -36,11 +36,11 @@ public class CrudTest {
     public void shouldDeleteTask() throws Exception {
         String desc = "Usuwany rekord", start = "11.12.2015", end = "5.12.2015";
 
-        DBObject dbo = crud.createTask(desc, start, end);
+        DBObject task = crud.createTask(desc, start, end);
 
-        DBObject deletedDBO = crud.deleteTask();
+        DBObject deletedTask = crud.deleteTask();
 
-        assertEquals(dbo.get("Opis"), deletedDBO.get("Opis"));
+        assertEquals(task.get("Opis"), deletedTask.get("Opis"));
     }
 
     @Test
