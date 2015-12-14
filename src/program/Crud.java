@@ -1,3 +1,5 @@
+package program;
+
 import com.mongodb.*;
 
 /**
@@ -11,11 +13,9 @@ public class Crud {
         MongoClient mongoClient = new MongoClient("localhost", 27017);
 
         // Now connect to your databases
-        DB db = mongoClient.getDB("test");
+        DB db = mongoClient.getDB("todolist");
         System.out.println("Connect to database successfully");
 
-//            boolean auth = db.authenticate(myUserName, myPassword);
-//            System.out.println("Authentication: "+auth);
         DBCollection coll = db.getCollection("mycol");
         System.out.println("Collection mycol selected successfully");
         return coll;
@@ -24,7 +24,6 @@ public class Crud {
     public void insertDocument(String desc,  String start, String end ){
         try{
             DBCollection coll = connectToDb();
-
 
             BasicDBObject doc = new BasicDBObject("title", "MongoDB").
                     append("Opis", desc).
@@ -39,18 +38,21 @@ public class Crud {
         }
     }
 
-    public void read(){
+    public String read(){
         // To connect to mongodb server
         DBCollection coll = connectToDb();
 
         DBCursor cursor = coll.find();
         int i = 1;
-
+        String text = null;
         while (cursor.hasNext()) {
-            System.out.println("Inserted Document: "+i);
-            System.out.println(cursor.next());
+//            System.out.println("Inserted Document: "+i);
+//            System.out.println(cursor.next());
+            DBObject o = cursor.next();
+            text = (String) o.get("Opis");
             i++;
         }
+        return text;
     }
 
     public void deleteDocument(){
