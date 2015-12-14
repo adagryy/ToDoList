@@ -13,38 +13,43 @@ import static org.junit.Assert.*;
  */
 public class CrudTest {
     private Crud crud = new Crud();
+
     @Test
-    public void testInsertDocument() throws Exception {
+    public void shouldNotAddNewTask() throws Exception {
+        DBObject dbo =  crud.createTask( null, null , null);
+        assertNull(dbo);
+    }
+
+    @Test
+    public void shouldAddNewTask() throws Exception {
         String desc = "Przykładowy opis", start = "21.12.2015", end = "25.12.2015";
-
-        crud.insertDocument(desc, start, end);
-
-        assertEquals(crud.read(), desc);
+        DBObject dbo =  crud.createTask(desc, start, end);
+        assertNotNull(dbo);
     }
 
     @Test
-    public void testRead() throws Exception {
+    public void shouldReadAllTask() throws Exception {
 
     }
 
     @Test
-    public void testDeleteDocument() throws Exception {
+    public void shouldDeleteTask() throws Exception {
         String desc = "Usuwany rekord", start = "11.12.2015", end = "5.12.2015";
 
-        DBObject dbo = crud.insertDocument(desc, start, end);
+        DBObject dbo = crud.createTask(desc, start, end);
 
-        DBObject deletedDBO = crud.deleteDocument();
+        DBObject deletedDBO = crud.deleteTask();
 
         assertEquals(dbo.get("Opis"), deletedDBO.get("Opis"));
     }
 
     @Test
-    public void testUpdateDocument() throws Exception{
+    public void shouldUpdateDescription() throws Exception{
         String desc = "Przed updateem", start = "11.12.2015", end = "5.12.2015", afterUpdate = "afterUpdate";
 
-        DBObject dbo = crud.insertDocument(desc, start, end);
+        DBObject dbo = crud.createTask(desc, start, end);
 
-        DBObject someOtherObject = crud.updateDocument(desc, afterUpdate);
+        DBObject someOtherObject = crud.updateTaskName(desc, afterUpdate);
 
         assertSame(someOtherObject.get("Opis"), afterUpdate);
     }

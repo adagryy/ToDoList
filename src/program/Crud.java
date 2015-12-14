@@ -26,30 +26,30 @@ public class Crud {
         return coll;
     }
 
-    public DBObject insertDocument(String desc,  String start, String end ){
-        BasicDBObject doc = null;
+    public DBObject createTask(String desc, String start, String end ){
+        BasicDBObject task = null;
         try{
-            DBCollection coll = connectToDb();
+            DBCollection collection = connectToDb();
 
-            doc = new BasicDBObject("title", "MongoDB").
+            task = new BasicDBObject("title", "MongoDB").
                     append("Opis", desc).
                     append("Początek", start).
                     append("KOniec", end).
                     append("by", "Adam");
 
-            coll.insert(doc);
+            collection.insert(task);
             System.out.println("Document inserted successfully");
         }catch(Exception e){
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
-        return doc;
+        return task;
     }
 
-    public String read(){
+    public String readTaskDesc(){
         // To connect to mongodb server
-        DBCollection coll = connectToDb();
+        DBCollection collection = connectToDb();
 
-        DBCursor cursor = coll.find();
+        DBCursor cursor = collection.find();
         int i = 1;
         String text = null;
         while (cursor.hasNext()) {
@@ -62,15 +62,15 @@ public class Crud {
         return text;
     }
 
-    public DBObject deleteDocument(){
-        DBObject myDoc = null;
+    public DBObject deleteTask(){
+        DBObject task = null;
         try{
             // To connect to mongodb server
             DBCollection coll = connectToDb();
 
-            myDoc = coll.findOne();
-            coll.remove(myDoc);
-            System.out.println(myDoc.get("Opis"));
+            task = coll.findOne();
+            coll.remove(task);
+            System.out.println(task.get("Opis"));
             DBCursor cursor = coll.find();
             int i = 1;
 
@@ -86,11 +86,11 @@ public class Crud {
             System.err.println( e.getClass().getName() + ": " + e.getMessage() );
         }
 
-        return myDoc;
+        return task;
     }
 
-    public BasicDBObject updateDocument( String oldName, String newName) {
-        DBCollection coll = connectToDb();
+    public BasicDBObject updateTaskName(String oldName, String newName) {
+        DBCollection collection = connectToDb();
 
         BasicDBObject query = new BasicDBObject();
         query.put("Opis", oldName);
@@ -98,12 +98,12 @@ public class Crud {
         BasicDBObject newDocument = new BasicDBObject();
         newDocument.put("Opis", newName);
 
-        BasicDBObject updateObj = new BasicDBObject();
-        updateObj.put("$set", newDocument);
+        BasicDBObject updateTask = new BasicDBObject();
+        updateTask.put("$set", newDocument);
 
-        coll.update(query, updateObj);
+        collection.update(query, updateTask);
 
-        return updateObj;
+        return updateTask;
     }
 
 }
