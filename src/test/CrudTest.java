@@ -29,18 +29,14 @@ public class CrudTest {
 
     @Test
     public void shouldReadAllTask() throws Exception {
-
+        assertEquals(crud.getCount(), crud.readAllTask());
     }
 
     @Test
     public void shouldDeleteTask() throws Exception {
-        String desc = "Usuwany rekord", start = "11.12.2015", end = "5.12.2015";
-
-        DBObject task = crud.createTask(desc, start, end);
-
-        DBObject deletedTask = crud.deleteTask();
-
-        assertEquals(task.get("Opis"), deletedTask.get("Opis"));
+        long count = crud.getCount();
+        crud.deleteTask();
+        assertEquals(count - 1, crud.getCount());
     }
 
     @Test
@@ -51,6 +47,6 @@ public class CrudTest {
 
         DBObject someOtherObject = crud.updateTaskName(desc, afterUpdate);
 
-        assertSame(someOtherObject.get("Opis"), afterUpdate);
+        assertNotSame(dbo.get("Opis"), afterUpdate);
     }
 }

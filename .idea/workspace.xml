@@ -9,7 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/program/Crud.java" afterPath="$PROJECT_DIR$/src/program/Crud.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/program/MongoDBJDBC.java" afterPath="$PROJECT_DIR$/src/program/MongoDBJDBC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/CrudTest.java" afterPath="$PROJECT_DIR$/src/test/CrudTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todolist_with_tdd.iml" afterPath="$PROJECT_DIR$/todolist_with_tdd.iml" />
     </list>
     <ignored path="todolist_with_tdd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MongoDBJDBC.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MongoDBJDBC.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/program/MongoDBJDBC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44270834">
-              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -53,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/program/Crud.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrudTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CrudTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/CrudTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.7638889">
+              <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,9 +98,9 @@
         <option value="$PROJECT_DIR$/src/MongoDBJDBC.java" />
         <option value="$PROJECT_DIR$/src/Crud.java" />
         <option value="$PROJECT_DIR$/src/program/CrudTest.java" />
-        <option value="$PROJECT_DIR$/src/test/CrudTest.java" />
-        <option value="$PROJECT_DIR$/src/program/MongoDBJDBC.java" />
         <option value="$PROJECT_DIR$/src/program/Crud.java" />
+        <option value="$PROJECT_DIR$/src/program/MongoDBJDBC.java" />
+        <option value="$PROJECT_DIR$/src/test/CrudTest.java" />
       </list>
     </option>
   </component>
@@ -217,10 +216,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches">
         <subPane />
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +256,7 @@
       <recent name="C:\Users\Adam\Desktop\ToDoList\test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MongoDBJDBC">
+  <component name="RunManager" selected="JUnit.CrudTest.shouldDeleteTask">
     <configuration default="false" name="MongoDBJDBC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="program.MongoDBJDBC" />
@@ -273,19 +272,19 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CrudTest.testInsertDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CrudTest.shouldAddNewTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="program.*" />
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="todolist_with_tdd" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="program" />
-      <option name="MAIN_CLASS_NAME" value="program.CrudTest" />
-      <option name="METHOD_NAME" value="testInsertDocument" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CrudTest" />
+      <option name="METHOD_NAME" value="shouldAddNewTask" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -299,7 +298,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CrudTest.testInsertDocument (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CrudTest.shouldUpdateDescription" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -311,7 +310,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.CrudTest" />
-      <option name="METHOD_NAME" value="testInsertDocument" />
+      <option name="METHOD_NAME" value="shouldUpdateDescription" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -325,7 +324,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CrudTest.testDeleteDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CrudTest.shouldDeleteTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -337,7 +336,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.CrudTest" />
-      <option name="METHOD_NAME" value="testDeleteDocument" />
+      <option name="METHOD_NAME" value="shouldDeleteTask" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -351,7 +350,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="CrudTest.testUpdateDocument" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CrudTest.shouldReadAllTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -363,7 +362,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.CrudTest" />
-      <option name="METHOD_NAME" value="testUpdateDocument" />
+      <option name="METHOD_NAME" value="shouldReadAllTask" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -790,18 +789,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.MongoDBJDBC" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CrudTest.testInsertDocument" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.CrudTest.testInsertDocument (1)" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CrudTest.testDeleteDocument" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.CrudTest.testUpdateDocument" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldAddNewTask" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldUpdateDescription" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldDeleteTask" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldReadAllTask" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.MongoDBJDBC" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CrudTest.testUpdateDocument" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CrudTest.testDeleteDocument" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CrudTest.testInsertDocument (1)" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CrudTest.testInsertDocument" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldDeleteTask" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldAddNewTask" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MongoDBJDBC" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldReadAllTask" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CrudTest.shouldUpdateDescription" />
       </list>
     </recent_temporary>
   </component>
@@ -832,44 +831,45 @@
       <workItem from="1450043430502" duration="1725000" />
       <workItem from="1450090288223" duration="3292000" />
       <workItem from="1450093624703" duration="2669000" />
-      <workItem from="1450111332681" duration="9730000" />
+      <workItem from="1450111332681" duration="10328000" />
+      <workItem from="1450188247185" duration="2600000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CrudTest_testDeleteDocument - 2015.12.14 at 19h 13m 25s.xml">
-      <configuration name="CrudTest.testDeleteDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldAddNewTask - 2015.12.15 at 15h 57m 52s.xml">
+      <configuration name="CrudTest.shouldAddNewTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testDeleteDocument - 2015.12.14 at 19h 14m 36s.xml">
-      <configuration name="CrudTest.testDeleteDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldDeleteTask - 2015.12.15 at 15h 46m 15s.xml">
+      <configuration name="CrudTest.shouldDeleteTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testDeleteDocument - 2015.12.14 at 19h 15m 07s.xml">
-      <configuration name="CrudTest.testDeleteDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldDeleteTask - 2015.12.15 at 15h 55m 58s.xml">
+      <configuration name="CrudTest.shouldDeleteTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testDeleteDocument - 2015.12.14 at 19h 16m 59s.xml">
-      <configuration name="CrudTest.testDeleteDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldDeleteTask - 2015.12.15 at 15h 56m 03s.xml">
+      <configuration name="CrudTest.shouldDeleteTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testDeleteDocument - 2015.12.14 at 19h 17m 11s.xml">
-      <configuration name="CrudTest.testDeleteDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldDeleteTask - 2015.12.15 at 15h 56m 07s.xml">
+      <configuration name="CrudTest.shouldDeleteTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testDeleteDocument - 2015.12.14 at 19h 29m 36s.xml">
-      <configuration name="CrudTest.testDeleteDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldDeleteTask - 2015.12.15 at 15h 58m 00s.xml">
+      <configuration name="CrudTest.shouldDeleteTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testUpdateDocument - 2015.12.14 at 20h 15m 59s.xml">
-      <configuration name="CrudTest.testUpdateDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldDeleteTask - 2015.12.15 at 15h 58m 04s.xml">
+      <configuration name="CrudTest.shouldDeleteTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testUpdateDocument - 2015.12.14 at 20h 19m 18s.xml">
-      <configuration name="CrudTest.testUpdateDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldReadAllTask - 2015.12.15 at 15h 53m 15s.xml">
+      <configuration name="CrudTest.shouldReadAllTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testUpdateDocument - 2015.12.14 at 20h 20m 33s.xml">
-      <configuration name="CrudTest.testUpdateDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldReadAllTask - 2015.12.15 at 15h 53m 47s.xml">
+      <configuration name="CrudTest.shouldReadAllTask" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CrudTest_testUpdateDocument - 2015.12.14 at 20h 22m 34s.xml">
-      <configuration name="CrudTest.testUpdateDocument" configurationId="JUnit" />
+    <history-entry file="CrudTest_shouldUpdateDescription - 2015.12.15 at 15h 45m 09s.xml">
+      <configuration name="CrudTest.shouldUpdateDescription" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32980000" />
+    <option name="totallyTimeSpent" value="36178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -882,8 +882,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32664436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32664436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32782516" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913646" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -954,6 +954,34 @@
     <entry file="file://$PROJECT_DIR$/src/program/MongoDBJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/program/Crud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/CrudTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/program/MongoDBJDBC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="22" column="74" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="74" />
           <folding />
         </state>
@@ -983,7 +1011,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,7 +1046,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1088,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,7 +1152,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,7 +1174,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1249,7 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,20 +1285,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/CrudTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/program/Crud.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1287,9 +1297,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/program/MongoDBJDBC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44270834">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/CrudTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7638889">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

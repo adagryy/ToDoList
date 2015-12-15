@@ -62,9 +62,23 @@ public class Crud {
         return text;
     }
 
-    public void readAllTask{
-//        TODO
-//        powinnismy wylistowac wszystkie taski
+    public int readAllTask(){
+        int i = 0;
+        try{
+        DBCollection coll = connectToDb();
+
+        DBCursor cursor = coll.find();
+
+        while (cursor.hasNext()) {
+            System.out.println("Inserted Document: "+i);
+            System.out.println(cursor.next());
+            i++;
+        }
+
+    }catch(Exception e){
+        System.err.println( e.getClass().getName() + ": " + e.getMessage() );
+    }
+        return i;
     }
 
     public DBObject deleteTask(){
@@ -80,7 +94,7 @@ public class Crud {
             int i = 1;
 
             while (cursor.hasNext()) {
-//                System.out.println("Inserted Document: "+i);
+                System.out.println("Inserted Document: "+i);
                 System.out.println(cursor.next());
                 i++;
             }
@@ -109,6 +123,11 @@ public class Crud {
         collection.update(query, updateTask);
 
         return updateTask;
+    }
+
+    public long getCount(){
+        DBCollection coll = connectToDb();
+        return coll.count();
     }
 
 }
